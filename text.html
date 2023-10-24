@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Título de la página</title>
+</head>
+<body>
+       <!-- estructura de recursos y videos -->
+     <div class="textoS">
+            <h2 id="textR">Recursos</h2>
+       <h2>Videos</h2> 
+       </div>
+       <br>
+       <div class="ResourcesVideos">
+           <div class="boxes">
+               <div>box</div>
+               <div>box</div>
+               <div>box</div>
+               <div>box</div>
+               <div>box</div>
+               <div>box</div>
+           </div>
+           <div class="video">
+               <div>Video1</div>
+               <div>Video2</div>
+           </div>
+       </div>
+            
+                      
+                    <style>
+   .boxes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    
+}
+.boxes div{
+    background: gray;
+    width: 100px;
+    height: 100px;
+    display: grid;
+    place-items: center;
+}
+.video{
+    display: grid;
+    justify-content: center;
+    grid-gap: 10px;
+}
+.video div{
+    background: gray;
+    display: grid;
+    width: 200px;
+    height: 100px;
+    place-items: center;    
+}
+
+.ResourcesVideos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.textoS{
+    display: flex;
+    justify-content: space-around;
+}
+#textR{
+    transform: translateX(-200%);
+}
+                    </style>
+</body>
+</html>
